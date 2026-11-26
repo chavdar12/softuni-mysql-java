@@ -1,0 +1,10 @@
+# Normalize line endings; LF everywhere
+* text=auto eol=lf
+
+*.sql  text linguist-language=SQL
+*.md   text diff=markdown
+*.yml  text
+
+*.png  binary
+*.jpg  binary
+*.pdf  binary

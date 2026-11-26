@@ -1,0 +1,5 @@
+-- database: users table from task 08
+ALTER TABLE `users`
+    DROP PRIMARY KEY,
+    ADD CONSTRAINT `pk_users` PRIMARY KEY (`id`),
+    MODIFY COLUMN `username` VARCHAR(30) NOT NULL UNIQUE;

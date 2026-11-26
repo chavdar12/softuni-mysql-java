@@ -1,0 +1,9 @@
+[sqlfluff]
+dialect = mysql
+max_line_length = 120
+# Formatting only: layout plus upper-case keywords. Names keep their case and no
+# "convention" rewrites (e.g. IFNULL -> COALESCE) are applied.
+exclude_rules = CP02, CP03, CP04, CP05, convention
+
+[sqlfluff:rules:capitalisation.keywords]
+capitalisation_policy = upper
